@@ -32,14 +32,14 @@ for (let i = 0; i < str.length; i++) {
      * Declare an array with square brackets: let arr = [];
      * Initialize with values: let arr = [1, 2, 3];
      * Arrays can contain mixed data types: let arr = [1, "two", true];
-     * How to Read the Values in an Array (Including Nested Levels):
+
 
 ### 2. How to Read the Values in an Array (Including Nested Levels):
      
      * Access values by index: arr[0]
      * Nested arrays: let nestedArr = [[1, 2], [3, 4]]; nestedArr[1][0] (accesses 3)
      * Use loops or methods like forEach to read values.
-     *
+     
 
 ### 3. How to Update the Values in an Array:
      
@@ -68,7 +68,7 @@ for (let i = 0; i < arr.length; i++) {
 
 ### 6. How to Pass Arrays as a Parameter:
     
-    * Function definition: function printArray(arr) { arr.forEach(console.log); }
+    * Function definition: function printArray(arr) { arr.forEach(item)=>console.log(item); }
     * Function call: printArray([1, 2, 3]);
 
 
@@ -87,14 +87,12 @@ for (let i = 0; i < arr.length; i++) {
     
     * Create an empty object: let obj = {};
     * Initialize with key-value pairs: let obj = {name: 'Alice', age: 25};
-    * How to Add New Keys to the Object:
 
 
 ### 2. How to Add New Keys to the Object: 
 
     * Using dot notation: obj.city = 'New York';
     * Using bracket notation: obj['country'] = 'USA';
-    * How to Remove Keys from the Object:
 
 
 ### 3. How to Remove Keys from the Object:
@@ -125,19 +123,30 @@ for (let i = 0; i < arr.length; i++) {
 
     * Function definition: function printPerson(person) { console.log(person.name); }
     * Function call: printPerson({name: 'Alice', age: 25});
-    * How to Return an Object from a Function:
 
 
 ### 8. How to Return an Object from a Function:
    
     * Define function: function createPerson(name, age) { return {name, age}; }
     * Return object: let person = createPerson('Alice', 25);
-    * How to Return Only Select Information from an Object:
 
 ### 9. How to Return Only Select Information from an Object: 
     
-    * Destructure and return: let {name, age} = obj; return {name, age};
     * Using Dot Notation with an Object:
+
+```
+    const person = {
+  name: "John",
+  age: 30,
+  city: "New York",
+  profession: "Developer"
+};
+
+const { name, profession } = person;
+console.log(name);       // Output: John
+console.log(profession); // Output: Developer
+
+ ```
 
 
 ### 10. Using Dot Notation with an Object:
