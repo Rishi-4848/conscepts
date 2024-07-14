@@ -162,7 +162,7 @@ arr.splice(2, 1, 'a'); // [1, 2, 'a', 4]
 
 ```
 
-### 11. hift:
+### 11.Shift:
 
      * Removes the first element from an array and returns that removed element.
 
