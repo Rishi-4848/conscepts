@@ -46,8 +46,8 @@ element.parentNode.removeChild(element);
 ### Updating Elements
 To update existing elements, you can use the following methods:
 
--**innerHTML**: Updates the HTML content of an element.
--**textContent**: Updates the text content of an element.
+- **innerHTML**: Updates the HTML content of an element.
+- **textContent**: Updates the text content of an element.
 ```
 let element = document.getElementById("myElement");
 element.textContent = "Updated Content";
